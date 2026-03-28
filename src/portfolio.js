@@ -35,7 +35,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/Ranjitha-GV",
   linkedin: "https://www.linkedin.com/in/ranjitha-g-v-432373137/",
-  gmail: "ranjithav10@gmail.com",
+  gmail: "ranjithagv10@gmail.com",
   gitlab: "https://gitlab.com/saadpasta",
   facebook: "https://www.facebook.com/saad.pasta7",
   medium: "https://medium.com/@saadpasta",
@@ -383,7 +383,7 @@ const contactInfo = {
   subtitle:
     "Exploring new opportunities!! Happy to connect if you’re hiring.",
   number: "+91-8867684833",
-  email_address: "ranjithav10@gmail.com"
+  email_address: "ranjithagv10@gmail.com"
 };
 
 // Twitter Section
