@@ -22,6 +22,9 @@ export default function Blogs() {
       : NaN;
   }
   useEffect(() => {
+    if (!blogSection.display) {
+      return;
+    }
     if (blogSection.displayMediumBlogs === "true") {
       const getProfileData = () => {
         fetch("/blogs.json")
