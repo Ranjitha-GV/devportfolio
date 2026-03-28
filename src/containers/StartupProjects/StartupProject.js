@@ -1,10 +1,12 @@
 import React, {useContext} from "react";
 import "./StartupProjects.scss";
-import {bigProjects} from "../../portfolio";
+import * as portfolio from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
+  const bigProjects = portfolio.bigProjects;
+
   function openUrlInNewTab(url) {
     if (!url) {
       return;
@@ -14,7 +16,12 @@ export default function StartupProject() {
   }
 
   const {isDark} = useContext(StyleContext);
-  if (!bigProjects.display) {
+  if (
+    !bigProjects ||
+    !bigProjects.display ||
+    !Array.isArray(bigProjects.projects) ||
+    bigProjects.projects.length === 0
+  ) {
     return null;
   }
   return (

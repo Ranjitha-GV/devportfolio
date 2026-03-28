@@ -28,6 +28,7 @@
 .greeting-main > * {
   flex: 1;
   margin-bottom: 30px;
+  margin-right: 3rem;
 }
 
 .empty-div {
@@ -43,7 +44,7 @@
 }
 
 .greeting-text {
-  font-size: 70px;
+  font-size: 2.5rem;
   line-height: 1.1;
   color: $textColor !important;
 }
@@ -93,7 +94,7 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .greeting-text-p {
     font-size: 20px;

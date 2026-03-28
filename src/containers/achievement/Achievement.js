@@ -1,12 +1,18 @@
 import React, {useContext} from "react";
 import "./Achievement.scss";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
-import {achievementSection} from "../../portfolio";
+import * as portfolio from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 export default function Achievement() {
+  const achievementSection = portfolio.achievementSection;
   const {isDark} = useContext(StyleContext);
-  if (!achievementSection.display) {
+  if (
+    !achievementSection ||
+    !achievementSection.display ||
+    !Array.isArray(achievementSection.achievementsCards) ||
+    achievementSection.achievementsCards.length === 0
+  ) {
     return null;
   }
   return (
