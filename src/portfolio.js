@@ -126,7 +126,7 @@ const educationInfo = {
     },
     {
       schoolName: "Institute of Management Technology, Ghaziabad",
-      logo: require("./assets/images/IMT.jpg"),
+      logo: require("./assets/images/IMT_logo.jpg"),
       subHeader: "Post Graduate Diploma in Business Analytics",
       duration: "March 2021 - February 2022",
       // desc: "Participated in the research of XXX and published 3 papers.",
